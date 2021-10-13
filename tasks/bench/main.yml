@@ -28,3 +28,4 @@
 - name: "Pull docker container"
   docker_image:
     name: mixbytes/tank.bench-polkadot
+    souce: pull
