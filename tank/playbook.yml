@@ -2,7 +2,7 @@
 - name: Converge boot node
   hosts: "*boot*"
   become: true
-  gather_facts: smart
+  gather_facts: true
   vars:
     bc_polkadot_comp_state_boot: present
     install_promstack: true
@@ -15,7 +15,7 @@
 - name: Converge validator node
   hosts: "*prod*"
   become: true
-  gather_facts: smart
+  gather_facts: true
   vars:
     bc_polkadot_comp_state_prod: present
     bc_polkadot_comp_state_bench: present
