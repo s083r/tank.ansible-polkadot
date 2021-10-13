@@ -2,7 +2,7 @@
 - name: Collect facts
   hosts: all
   become: true
-  gather_facts: smart
+  gather_facts: true
   tasks:
     - debug: msg="Fetching facts from cluster instances"
       tags: [print_action]
